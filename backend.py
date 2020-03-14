@@ -1,6 +1,5 @@
 import http.server
 import socketserver
-import urllib
 import KeywordExtract.ExtractKeyword
 import EmojiText.EmojiVec
 import requests

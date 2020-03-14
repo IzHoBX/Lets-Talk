@@ -31,6 +31,4 @@ def extractKeyword(inputString):
     keywords = list(set(keywords_pos +
                         keywords_ents +
                         keywords_compounds) - PRONOUNS)  # dedupe
-    print(keywords)
-
-extractKeyword("I've stole it but you should see it")
+    return keywords

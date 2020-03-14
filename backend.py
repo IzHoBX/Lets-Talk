@@ -5,6 +5,8 @@ import EmojiText.EmojiVec
 import requests
 import urllib
 import json
+import socket
+import os
 
 from http.server import BaseHTTPRequestHandler, HTTPServer
 
@@ -58,9 +60,9 @@ class MyHandler(BaseHTTPRequestHandler):
 
 def main():
 
-    print('starting server on port 7777...')
+    print('starting server on port ' + os.environ.get("PORT", 7777) + "...")
 
-    server_address = ('172.31.19.219', 7777)
+    server_address = (socket.gethostbyname("text-emoji2.herokuapp.com"), os.environ.get("PORT", 7777))
     httpd = HTTPServer(server_address, MyHandler)
     httpd.serve_forever()
 

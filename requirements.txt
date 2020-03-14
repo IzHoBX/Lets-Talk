@@ -3,4 +3,4 @@ spacy==2.2.3
 emoji==0.5.4
 sklearn==0.0
 numpy==1.18.1
-en-core-web-lg==2.2.5
+https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-2.2.5/en_core_web_lg-2.2.5.tar.gz

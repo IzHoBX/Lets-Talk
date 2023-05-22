@@ -1,4 +1,4 @@
-requests==2.23.0
+requests==2.31.0
 spacy==2.2.3
 emoji==0.5.4
 sklearn==0.0
